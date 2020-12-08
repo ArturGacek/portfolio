@@ -1,10 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Portfolio Coders Camp - Artur Gacek</title>
+    <meta name="description" content="Portfolio Coders Camp - Artur Gacek">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-$END$
+    <header class="page-header">
+        <nav class="navbar">
+            <div class="page-logo">
+                <a href="#"><img src="assets/icons/Logo.svg" alt="page logo"></a>
+                <span>Dev</span>
+            </div>
+        </nav>
+    </header>
+    <main class="page-content">
+        <section class="page-content__home">
+            <div class="home-section__top">
+                <h1 class="home-section__header">Welcome!</h1>
+                <h2 class="home-section__description">My name is The Artur Gacek</h2>
+                <ul class="home-section__icons">
+                    <li><a href="https://twitter.com/" target="_blank"><img src="./assets/icons/icon_twitter.svg" alt="twitter icon" class="home-section__icon"></a></li>
+                    <li><a href="https://www.linkedin.com/in/ArturGacek" target="_blank"><img src="./assets/icons/icon_linkedin.svg" alt="linkedin icon" class="home-section__icon"></a></li>
+                    <li><a href="https://github.com/ArturGacek" target="_blank"><img src="./assets/icons/icon_gh.svg" alt="github icon" class="home-section__icon"></a></li>
+                    <li><a href="https://www.facebook.com/artur.gacek.31/" target="_blank"><img src="./assets/icons/icon_facebook.svg" alt="facebook icon" class="home-section__icon"></a></li>
+                </ul>
+            </div>
+            <div class="page-content__down">
+                <h3>I am happy to help you with any problem!</h3>
+                <div class="home-section__buttons">
+                    <button>Contact me!</button>
+                    <button>Check my CV</button>
+                </div>
+            </div>
+        </section>
+        <section class="aboutMe-section">
+            <div class="container">
+                <h2>About me</h2>
+                <div class="aboutMe-section__content">
+                    <div class="aboutMe-section__personalData">
+                        <img src="./assets/img/mypicture.png" alt="my picture" class="aboutMe-section__picture">
+                        <ul class="aboutMe-section__contact">
+                            <li>Full Name: <span class="aboutMe-section__myData">Web Developer</span></li>
+                            <li>Age: <span class="aboutMe-section__myData">35 yo</span></li>
+                            <li>Profile: <span class="aboutMe-section__myData">Fullstack</span></li>
+                            <li>Telephone: <span class="aboutMe-section__myData">+48 123 456 789</span></li>
+                            <li>E-mail: <a class="aboutMe-section__myData" href="mailto:arthur.gacek@gmail.com">arthur.gacek@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="aboutMe-section__description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="skills-section__header">Skills</h2>
+                <ul class="skills-section__content">
+                    <li class="skills-section__skill">
+                        <img src="./assets/icons/skills_icon_UX.svg" alt="UX/UI icon" class="skills-section__img">
+                        <h3 class="skills-section__title">UX/UI</h3>
+                        <p class="skills-section__description">Figma</p>
+                    </li>
+                    <li class="skills-section__skill">
+                        <img src="./assets/icons/skills_icon_frontend.svg" alt="front end icon" class="skills-section__img">
+                        <h3 class="skills-section__title">Front End</h3>
+                        <p class="skills-section__description">Html, CSS, JavaScript</p>
+                    </li>
+                    <li class="skills-section__skill">
+                        <img src="./assets/icons/skills_icon_backend.svg" alt="back end icon" class="skills-section__img">
+                        <h3 class="skills-section__title">Back End</h3>
+                        <p class="skills-section__description">PHP, Node.js</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="portfolio-section">
+            <div class="container">
+                <h2 class="portfolio-section__header">Portfolio</h2>
+                <div class="portfolio-section__content">
+                    <div class="portfolio-section__project">
+                        <h3>Design</h3>
+                        <p class="portfolio-section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button>View</button>
+                    </div>
+                    <div class="portfolio-section__project">
+                    </div>
+                    <div class="portfolio-section__project">
+                    </div>
+                    <div class="portfolio-section__project">
+                    </div>
+                    <div class="portfolio-section__project">
+                        <h3>Design project</h3>
+                        <p class="portfolio-section__description">xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <button>View</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contactUs-section">
+            <div class="container">
+                <h2>Contact us</h2>
+                <div class="contactUs-section__content">
+                    <div class="contactUs-section__description">
+                        <img src="./assets/icons/contact_messages_logo.svg" alt="message icon" class="contact-section__description__icon">
+                        <p>Please describe your question. Send me a message and I will answer you as soon as possible!</p>
+                    </div>
+                    <div class="contactUs-section__contact">
+                        <ul class="contactUs-section__icons">
+                            <li><a href="https://twitter.com/" target="_blank"><img src="./assets/icons/icon_twitter.svg" alt="twitter icon" class="contactUs-section__icon"></a></li>
+                            <li><a href="https://www.linkedin.com/in/ArturGacek" target="_blank"><img src="./assets/icons/icon_linkedin.svg" alt="linkedin icon" class="contactUs-section__icon"></a></li>
+                            <li><a href="https://github.com/ArturGacek" target="_blank"><img src="./assets/icons/icon_gh.svg" alt="github icon" class="contactUs-section__icon"></a></li>
+                            <li><a href="https://www.facebook.com/artur.gacek.31/" target="_blank"><img src="./assets/icons/icon_facebook.svg" alt="facebook" class="contactUs-section__icon"></a></li>
+                        </ul>
+                        <p class="contactUs-section__info">Web Developer</p>
+                        <p class="contactUs-section__info">Poland, Wrocław</p>
+                        <p>ul. Tęczowa 12/3 50-000</p>
+                        <p>+48 123-456-789 </p>
+                        <a href="mailto:arthur.gacek@gmail.com">arthur.gacek@gmail.com</a>
+                    </div>
+                    <div class="contactUs-section__form">
+                        <h3 class="contactUs-section__form__header">Let's start!</h3>
+                        <form>
+                            <div>
+                                <label for="name"></label>
+                                <input name="name" id="name" type="text" placeholder="Name">
+                            </div>
+                            <div>
+                                <label for="email"></label>
+                                <input name="email" id="email" type="email" placeholder="Your e-mail address">
+
+                            </div>
+                            <div>
+                                <label for="title"></label>
+                                <input name="title" id="title" type="text" placeholder="Topic">
+
+                            </div>
+                            <div>
+                                <label for="message"></label>
+                                <textarea name="message" id="message" placeholder="Message" rows="8"></textarea>
+
+                            </div>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        Copyrights &#169; 2020  CodersCrew
+    </footer>
 </body>
 </html>
