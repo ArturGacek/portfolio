@@ -216,3 +216,118 @@ nav {
 
 /*About section*/
 
+.aboutMe-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--container-color);
+    z-index: -2;
+}
+
+.aboutMe-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.aboutMe-section .wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7rem;
+}
+
+.aboutMe-section__content {
+    width: 85vw;
+    background-color: var(--container-color);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    padding: 0.5rem 0;
+}
+
+.aboutMe-section__personalData {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem auto;
+    grid-area: personalData;
+}
+
+.aboutMe-section__picture {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    padding: 0;
+    margin: .7rem 3rem;
+}
+
+.aboutMe-section__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 1rem;
+    list-style: none;
+}
+
+.aboutMe-section__contact li {
+    font-weight: bold;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.aboutMe-section__myData {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.aboutMe-section__description {
+    margin: auto;
+    padding: 0 2rem;
+    text-align: start;
+    grid-area: description;
+}
+
+.aboutMe-section__content {
+    display: grid;
+    grid-template-areas:
+    "personalData"
+    "description"
+}
+
+/*@media (min-width: 768px) {*/
+/*}*/
+
+@media (min-width: 1024px) {
+    .aboutMe-section__coverLayer {
+        background-image: url(./assets/img/gray_main_rectangle.png);
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70vw;
+        height: 60vh;
+        z-index: -1;
+    }
+    .aboutMe-section__personalData {
+        border-right: 3px dotted var(--primary-color);
+        margin: 0 auto;
+    }
+    .aboutMe-section h2 {
+        font-size: 2rem;
+        text-align: left;
+        padding-left: 9rem;
+        margin: 1rem;
+    }
+
+    .aboutMe-section__picture {
+        margin: 1.7rem auto;
+    }
+    .aboutMe-section__content {
+        display: grid;
+        grid-template-columns: 5.5fr 6.5fr;
+        grid-template-areas:
+            "personalData description"
+    }
+}
+
+/*Skills section*/
