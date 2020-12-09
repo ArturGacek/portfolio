@@ -12,28 +12,30 @@
     <header class="page-header">
         <nav class="navbar">
             <div class="page-logo">
-                <a href="#"><img src="assets/icons/Logo.svg" alt="page logo"></a>
+                <a href="#"><img src="assets/icons/logo.svg" alt="page logo"></a>
                 <span>Dev</span>
             </div>
         </nav>
     </header>
     <main class="page-content">
-        <section class="page-content__home">
+        <section class="home-section">
             <div class="home-section__top">
+                <div class="home-section__background"></div>
+                <div class="home-section__coverLayer"></div>
                 <h1 class="home-section__header">Welcome!</h1>
-                <h2 class="home-section__description">My name is The Artur Gacek</h2>
+                <h2 class="home-section__description">My name is Artur Gacek</h2>
                 <ul class="home-section__icons">
                     <li><a href="https://twitter.com/" target="_blank"><img src="./assets/icons/icon_twitter.svg" alt="twitter icon" class="home-section__icon"></a></li>
                     <li><a href="https://www.linkedin.com/in/ArturGacek" target="_blank"><img src="./assets/icons/icon_linkedin.svg" alt="linkedin icon" class="home-section__icon"></a></li>
-                    <li><a href="https://github.com/ArturGacek" target="_blank"><img src="./assets/icons/icon_gh.svg" alt="github icon" class="home-section__icon"></a></li>
+                    <li><a href="https://github.com/ArturGacek" target="_blank"><img src="./assets/icons/icon_github.svg" alt="github icon" class="home-section__icon"></a></li>
                     <li><a href="https://www.facebook.com/artur.gacek.31/" target="_blank"><img src="./assets/icons/icon_facebook.svg" alt="facebook icon" class="home-section__icon"></a></li>
                 </ul>
             </div>
-            <div class="page-content__down">
+            <div class="home-section__bottom">
                 <h3>I am happy to help you with any problem!</h3>
                 <div class="home-section__buttons">
-                    <button>Contact me!</button>
-                    <button>Check my CV</button>
+                    <button class="button">Contact me!</button>
+                    <button class="button">Check my CV</button>
                 </div>
             </div>
         </section>
@@ -42,7 +44,7 @@
                 <h2>About me</h2>
                 <div class="aboutMe-section__content">
                     <div class="aboutMe-section__personalData">
-                        <img src="./assets/img/mypicture.png" alt="my picture" class="aboutMe-section__picture">
+                        <img src="./assets/img/my_picture.png" alt="my picture" class="aboutMe-section__picture">
                         <ul class="aboutMe-section__contact">
                             <li>Full Name: <span class="aboutMe-section__myData">Web Developer</span></li>
                             <li>Age: <span class="aboutMe-section__myData">35 yo</span></li>
@@ -86,7 +88,7 @@
                     <div class="portfolio-section__project">
                         <h3>Design</h3>
                         <p class="portfolio-section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <button>View</button>
+                        <button class="button">View</button>
                     </div>
                     <div class="portfolio-section__project">
                     </div>
@@ -97,7 +99,7 @@
                     <div class="portfolio-section__project">
                         <h3>Design project</h3>
                         <p class="portfolio-section__description">xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <button>View</button>
+                        <button class="button">View</button>
                     </div>
                 </div>
             </div>
@@ -114,7 +116,7 @@
                         <ul class="contactUs-section__icons">
                             <li><a href="https://twitter.com/" target="_blank"><img src="./assets/icons/icon_twitter.svg" alt="twitter icon" class="contactUs-section__icon"></a></li>
                             <li><a href="https://www.linkedin.com/in/ArturGacek" target="_blank"><img src="./assets/icons/icon_linkedin.svg" alt="linkedin icon" class="contactUs-section__icon"></a></li>
-                            <li><a href="https://github.com/ArturGacek" target="_blank"><img src="./assets/icons/icon_gh.svg" alt="github icon" class="contactUs-section__icon"></a></li>
+                            <li><a href="https://github.com/ArturGacek" target="_blank"><img src="./assets/icons/icon_github.svg" alt="github icon" class="contactUs-section__icon"></a></li>
                             <li><a href="https://www.facebook.com/artur.gacek.31/" target="_blank"><img src="./assets/icons/icon_facebook.svg" alt="facebook" class="contactUs-section__icon"></a></li>
                         </ul>
                         <p class="contactUs-section__info">Web Developer</p>
@@ -145,7 +147,7 @@
                                 <textarea name="message" id="message" placeholder="Message" rows="8"></textarea>
 
                             </div>
-                            <button type="submit">Send</button>
+                            <button type="submit" class="button">Send</button>
                         </form>
                     </div>
                 </div>
