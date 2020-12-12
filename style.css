@@ -326,7 +326,6 @@ nav {
         margin: 1.7rem auto;
     }
     .aboutMe-section__content {
-        display: grid;
         grid-template-columns: 5.5fr 6.5fr;
         grid-template-areas:
             "personalData description"
@@ -429,4 +428,138 @@ nav {
 
 /*Portfolio section*/
 
+.portfolio-section {
+    padding: 0.8rem 0 2.5rem 0;
+    background-color: var(--container-color);
+}
 
+.portfolio-section__header {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.portfolio-section__content {
+    color: #fff;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "projekt1"
+    "projekt2"
+    "projekt3"
+    "projekt4"
+    "projekt5"
+}
+
+.portfolio-section__project {
+    padding-left: 1rem;
+    opacity: 1;
+    -webkit-transition: .6s ease-in-out;
+    transition: .6s ease-in-out;
+}
+
+.portfolio-section__project:hover {
+    opacity: .8;
+}
+
+.portfolio-section__project h3 {
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0 0;
+}
+.portfolio-section__description {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    max-width: 50vw;
+}
+
+.portfolio-section__project .button {
+    margin: 0;
+    width: 6.25rem;
+    height: 3.125rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-section__project:nth-of-type(1) {
+    height: 347px;
+    background-image:
+            linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%),
+            url(./assets/img/portfolio1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: projekt1;
+}
+
+.portfolio-section__project:nth-of-type(2) {
+
+    background-image: url(./assets/img/portfolio2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: projekt2;
+}
+
+.portfolio-section__project:nth-of-type(3) {
+
+    background-image: url(./assets/img/portfolio3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: projekt3;
+}
+
+.portfolio-section__project:nth-of-type(4) {
+
+    background-image: url(./assets/img/portfolio4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: projekt4;
+}
+
+.portfolio-section__project:nth-of-type(5) {
+
+    background-image:
+            linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%),
+            url(./assets/img/portfolio5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: projekt5;
+}
+
+@media (min-width: 768px) {
+    .portfolio-section__content {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+    "projekt1 projekt1 projekt1 projekt2 projekt2"
+    "projekt3 projekt3 projekt3 projekt4 projekt4"
+    "projekt5 projekt5 projekt5 projekt5 projekt5"
+    }
+
+    .portfolio-section__description {
+        font-size: 1rem;
+    }
+    .portfolio-section__project h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .portfolio-section__content {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+    "projekt1 projekt1 projekt1 projekt2 projekt2 projekt3 projekt3 projekt3"
+    "projekt4 projekt4 projekt5 projekt5 projekt5 projekt5 projekt5 projekt5"
+    }
+
+    .portfolio-section__project h3 {
+        font-size: 1.5rem;
+    }
+
+
+}
