@@ -11,9 +11,15 @@
 <body>
     <header class="page-header">
         <nav class="navbar">
-            <div class="page-logo">
+            <div class="navbar-pageLogo">
                 <a href="#"><img src="assets/icons/logo.svg" alt="page logo"></a>
-                <span>Dev</span>
+                <span>DEV</span>
+            </div>
+            <div class="navbar-pageNavList">
+                <div class="navbar-pageNavItem"><a class="menu-item" href="#aboutMe">About me</a></div>
+                <div class="navbar-pageNavItem"><a class="menu-item" href="#skills">Skills</a></div>
+                <div class="navbar-pageNavItem"><a class="menu-item" href="#portfolio">Portfolio</a></div>
+                <div class="navbar-pageNavItem"><a class="menu-item" href="#contact">Contact</a></div>
             </div>
         </nav>
     </header>
@@ -39,7 +45,7 @@
                 </div>
             </div>
         </section>
-        <section class="aboutMe-section">
+        <section id="aboutMe" class="aboutMe-section">
             <div class="aboutMe-section__coverLayer"></div>
             <h2>About me</h2>
             <div class="wrapper">
@@ -60,7 +66,7 @@
                 </div>
             </div>
         </section>
-        <section class="skills-section">
+        <section id="skills" class="skills-section">
             <h2 class="skills-section__header">Skills</h2>
             <ul class="skills-section__content">
                 <li class="skills-section__skill">
@@ -80,7 +86,7 @@
                 </li>
             </ul>
         </section>
-        <section class="portfolio-section">
+        <section id="portfolio" class="portfolio-section">
             <h2 class="portfolio-section__header">Portfolio</h2>
             <div class="portfolio-section__content">
                 <div class="portfolio-section__project">
@@ -101,52 +107,49 @@
                 </div>
             </div>
         </section>
-        <section class="contactUs-section">
-            <div class="container">
-                <h2>Contact us</h2>
-                <div class="contactUs-section__content">
-                    <div class="contactUs-section__description">
-                        <img src="./assets/icons/contact_messages_logo.svg" alt="message icon" class="contact-section__description__icon">
+        <section id="contact" class="contactUs-section">
+            <h2>Contact us</h2>
+            <div class="contactUs-section__content">
+                <div class="contactUs-section__description">
+                    <div class="contactUs-section__topDescription">
+                        <img src="./assets/icons/contact_messages_logo.svg" alt="message icon" class="contactUs-section__topDescriptionIcon">
                         <p>Please describe your question. Send me a message and I will answer you as soon as possible!</p>
                     </div>
-                    <div class="contactUs-section__contact">
-                        <ul class="contactUs-section__icons">
-                            <li><a href="https://twitter.com/" target="_blank"><img src="./assets/icons/icon_twitter.svg" alt="twitter icon" class="contactUs-section__icon"></a></li>
-                            <li><a href="https://www.linkedin.com/in/ArturGacek" target="_blank"><img src="./assets/icons/icon_linkedin.svg" alt="linkedin icon" class="contactUs-section__icon"></a></li>
-                            <li><a href="https://github.com/ArturGacek" target="_blank"><img src="./assets/icons/icon_github.svg" alt="github icon" class="contactUs-section__icon"></a></li>
-                            <li><a href="https://www.facebook.com/artur.gacek.31/" target="_blank"><img src="./assets/icons/icon_facebook.svg" alt="facebook" class="contactUs-section__icon"></a></li>
+                    <div class="contactUs-section__contactDetails">
+                        <ul class="contactUs-section__contactIcons">
+                            <li><a href="https://twitter.com/" target="_blank"><img src="./assets/icons/icon_twitter.svg" alt="twitter icon" class="contactUs-section__contactIconsIcon"></a></li>
+                            <li><a href="https://www.linkedin.com/in/ArturGacek" target="_blank"><img src="./assets/icons/icon_linkedin.svg" alt="linkedin icon" class="contactUs-section__contactIconsIcon"></a></li>
+                            <li><a href="https://github.com/ArturGacek" target="_blank"><img src="./assets/icons/icon_github.svg" alt="github icon" class="contactUs-section__contactIconsIcon"></a></li>
+                            <li><a href="https://www.facebook.com/artur.gacek.31/" target="_blank"><img src="./assets/icons/icon_facebook.svg" alt="facebook" class="contactUs-section__contactIconsIcon"></a></li>
                         </ul>
                         <p class="contactUs-section__info">Web Developer</p>
                         <p class="contactUs-section__info">Poland, Wrocław</p>
                         <p>ul. Tęczowa 12/3 50-000</p>
                         <p>+48 123-456-789 </p>
-                        <a href="mailto:arthur.gacek@gmail.com">arthur.gacek@gmail.com</a>
+                        <a class="contactUs-section__infoEmail" href="mailto:arthur.gacek@gmail.com">arthur.gacek@gmail.com</a>
                     </div>
-                    <div class="contactUs-section__form">
-                        <h3 class="contactUs-section__form__header">Let's start!</h3>
-                        <form>
-                            <div>
-                                <label for="name"></label>
-                                <input name="name" id="name" type="text" placeholder="Name">
-                            </div>
-                            <div>
-                                <label for="email"></label>
-                                <input name="email" id="email" type="email" placeholder="Your e-mail address">
-
-                            </div>
-                            <div>
-                                <label for="title"></label>
-                                <input name="title" id="title" type="text" placeholder="Topic">
-
-                            </div>
-                            <div>
-                                <label for="message"></label>
-                                <textarea name="message" id="message" placeholder="Message" rows="8"></textarea>
-
-                            </div>
-                            <button type="submit" class="button">Send</button>
-                        </form>
-                    </div>
+                </div>
+                <div class="contactUs-section__form">
+                    <h3 class="contactUs-section__formHeader">Let's start!</h3>
+                    <form>
+                        <div>
+                            <label for="name"></label>
+                            <input class="contactUs-section__formControl" name="name" id="name" type="text" placeholder="Name">
+                        </div>
+                        <div>
+                            <label for="email"></label>
+                            <input class="contactUs-section__formControl" name="email" id="email" type="email" placeholder="Your e-mail address">
+                        </div>
+                        <div>
+                            <label for="title"></label>
+                            <input class="contactUs-section__formControl" name="title" id="title" type="text" placeholder="Topic">
+                        </div>
+                        <div>
+                            <label for="message"></label>
+                            <textarea class="contactUs-section__formControl" name="message" id="message" placeholder="Message" rows="8"></textarea>
+                        </div>
+                        <button type="submit" class="contactUs-section__formButton button">Send</button>
+                    </form>
                 </div>
             </div>
         </section>
