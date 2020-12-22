@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio Artur Gacek 
 # Site address:
 # https://portfolio-arturgacek.netlify.app/
 
