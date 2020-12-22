@@ -473,7 +473,8 @@ body {
 .portfolio-section__header {
     text-align: center;
     font-size: 2rem;
-    margin: 0.5rem;
+    margin: 0;
+    padding: 0.5rem;
 }
 
 .portfolio-section__content {
@@ -512,7 +513,6 @@ body {
 }
 
 .portfolio-section__project .button {
-    margin: 0;
     width: 6.25rem;
     height: 3.125rem;
     border-radius: 15px;
@@ -610,9 +610,8 @@ body {
 }
 
 .contactUs-section h2 {
-    padding: 1rem 0;
+    padding: 1rem 0 1rem 3rem;
     margin: 0;
-    padding-left: 3rem;
 }
 
 .contactUs-section__content {
