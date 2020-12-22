@@ -1,4 +1,4 @@
-# Portfolio Artur Gacek 
+# Portfolio Artur Gacek - coderscamp2020-dzial-1
 # Site address:
  https://portfolio-arturgacek.netlify.app/ </br>
 
